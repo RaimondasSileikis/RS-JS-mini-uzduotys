@@ -1,4 +1,5 @@
-console.log(`--------02 Uzduotis. Veiksmai su kintamaisiais-------------`);
+// 1. Susumuoti visus skaičiaus tipo kintamuosius
+    // a. Rezultatą išvesti į console
 
 const pirmas = 2;
 console.log(pirmas);
@@ -13,6 +14,8 @@ const skaiciuSuma = pirmas + antras + trecias;
 console.log(skaiciuSuma);
 
 
+// 2. Sujungti visus teksto tipo kintamuosius taip, jog tarp jų būtų sudarytas tarpas
+    // a. Rezultatą išvesti į console
 
 const ketvirtas = 'Saule';
 console.log(ketvirtas);
@@ -27,6 +30,8 @@ const dangus = `${ketvirtas} ${penktas} ${sestas}`
 console.log(dangus);
 
 
+// 3. Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pateiktą logiką
+    // a. 1-2+3-4+5
 
 const laipsniai = [2, 6, 8, 4, 7];
 console.log(laipsniai);
@@ -36,6 +41,9 @@ console.log(minutes);
 
 const valandos = [1, 3, 5, 7, 9];
 console.log(valandos);
+
+
+    // b. Rezultatą išvesti į console
 
 const laipsniuSuma = laipsniai[0] - laipsniai[1] + laipsniai[2] - laipsniai[3] + laipsniai[4];
 console.log(laipsniuSuma);
@@ -47,6 +55,7 @@ const valanduSuma = valandos[0] - valandos[1] + valandos[2] - valandos[3] + vala
 console.log(valanduSuma);
 
 
+// 4. Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
 
 const miestai = [`Vilnius`, `Kaunas`, `Klaipeda`, `Panevezys`,  `Siauliai`];
 console.log(miestai);
