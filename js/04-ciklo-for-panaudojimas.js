@@ -55,15 +55,16 @@ console.log(suma6);
 // 2, panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo: 
     //a. pvz.: “abcdef” -> “fedcba”
 
-    const abc = ['a', 'b', 'c', 'd', 'e', 'f'];
+const abc = `abcdef`;
+let cba = '';
 
-    console.log(1 + `.` + abc[5]);
-    console.log(2 + `.` + abc[4]);
-    console.log(3 + `.` + abc[3]);
-    console.log(4 + `.` + abc[2]);
-    console.log(5 + `.` + abc[1]);
-    console.log(6 + `.` + abc[0]);
-    
+for (let i = 0; i < abc.length; i++) {
+    const raide = abc[abc.length - 1 - i]   
+    console.log(raide);
+    cba += raide
+    }
+console.log(`${abc} -> ${cba}`);
+
 // 3. Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
     // a. 0 - 11
 const nuoA = 0;
@@ -75,7 +76,7 @@ let dalmuoA1 = 0;
 let dalmuoA2 = 0;
 let dalmuoA3 = 0;
 
-for (let i = 0; i <= 11; i++) {
+for (let i = nuoA; i <= ikiA; i++) {
     
     if (i % daliklis1 === 0) {
         dalmuoA1++
@@ -96,7 +97,7 @@ let dalmuoB1 = 0;
 let dalmuoB2 = 0;
 let dalmuoB3 = 0;
 
-for (let i = 8; i <= 31; i++) {
+for (let i = nuoB; i <= ikiB; i++) {
     
     if (i % daliklis1 === 0) {
         dalmuoB1++
@@ -117,7 +118,7 @@ let dalmuoC1 = 0;
 let dalmuoC2 = 0;
 let dalmuoC3 = 0;
 
-for (let i = -18; i <= 18; i++) {
+for (let i = -nuoC; i <= ikiC; i++) {
     
     if (i % daliklis1 === 0) {
         dalmuoC1++
@@ -138,11 +139,11 @@ for (let i = -18; i <= 18; i++) {
 console.log(`Skaiciu intervale tarp ${nuoA} ir ${ikiA}, besidalijanciu be liekanos is ${daliklis1} yra ${dalmuoA1} vienetai.`);
 console.log(`Skaiciu intervale tarp ${nuoA} ir ${ikiA}, besidalijanciu be liekanos is ${daliklis2} yra ${dalmuoA2} vienetai.`);
 console.log(`Skaiciu intervale tarp ${nuoA} ir ${ikiA}, besidalijanciu be liekanos is ${daliklis3} yra ${dalmuoA3} vienetai.`);
-console.log(`-------------------------------------------------------------------------------`);
+console.log(`-------------------------------------------------------`);
 console.log(`Skaiciu intervale tarp ${nuoB} ir ${ikiB}, besidalijanciu be liekanos is ${daliklis1} yra ${dalmuoB1} vienetai.`);
 console.log(`Skaiciu intervale tarp ${nuoB} ir ${ikiB}, besidalijanciu be liekanos is ${daliklis2} yra ${dalmuoB2} vienetai.`);
 console.log(`Skaiciu intervale tarp ${nuoB} ir ${ikiB}, besidalijanciu be liekanos is ${daliklis3} yra ${dalmuoB3} vienetai.`);
-console.log(`-------------------------------------------------------------------------------`);
+console.log(`--------------------------------------------------------`);
 console.log(`Skaiciu intervale tarp ${nuoC} ir ${ikiC}, besidalijanciu be liekanos is ${daliklis1} yra ${dalmuoC1} vienetai.`);
 console.log(`Skaiciu intervale tarp ${nuoC} ir ${ikiC}, besidalijanciu be liekanos is ${daliklis2} yra ${dalmuoC2} vienetai.`);
 console.log(`Skaiciu intervale tarp ${nuoC} ir ${ikiC}, besidalijanciu be liekanos is ${daliklis3} yra ${dalmuoC3} vienetai.`);
