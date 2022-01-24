@@ -280,7 +280,7 @@ return ''
 function isrinktiRaides(e, f){
     let isrinktosRaides = '';
     let k = f;
-    for( let i = 0; i < a.length; i++) {
+    for( let i = 0; i < e.length; i++) {
         k--;
         if (k === 0) {
             isrinktosRaides += e[i];
