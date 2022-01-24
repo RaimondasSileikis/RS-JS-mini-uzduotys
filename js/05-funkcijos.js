@@ -322,3 +322,66 @@ console.log(`isrinktiRaides( 1561, 2 )`);
 
 // 1. rezultatas: “Pirmasis kintamasis yra netinkamo tipo.”
 console.log(`rezultatas: ${isrinktiRaides('1561', 2)}`);
+
+// 6. Funkcija pavadinimu “dalyba”:
+function dalyba() {
+}
+// a. turi priimti du kintamuosius
+function dalyba(a, b) {
+    reiksme = a / b;
+    return reiksme;
+}
+console.log(dalyba(10, 2));
+// b. reikia sugalvoti ir įgyvendinti kuo daugiau logiškų patikrinimų, kurie padėtų apsaugoti funkciją nuo neteisingo panaudojimo
+if (typeof a !== 'number') {
+  
+     }
+ if (!isFinite(a)) {
+     
+ }
+ if (typeof b !== 'number') {
+     
+ }
+ if (!isFinite(b)) {
+     
+ }
+// i. esant blogoms sąlygoms, išvesti atitinkamą pranešimą
+return 'ERROR: pirmas parametras ne skaicius';
+return 'ERROR: pirmas parametras turi buti tikras skaicius';
+return 'ERROR: antras parametras ne skaicius';
+return 'ERROR: antras parametras turi buti tikras skaicius';
+// ii. esant geroms - tęsti darbą
+
+// c. atskirą kintamąjį išsaugoti apskaičiuotą dviejų skaičių dalybos reikšmę
+// i. daliname pirmąjį skaičių iš antrojo
+const reiksme = a / b; 
+      
+// d. gražinti suskaičiuotą reikšmę
+return reiksme;
+// e. TESTAI:
+// i. sugalvoti bent 5 testus, kurie bendrai iš esmės patvirtintu gerą funkcijos veikimą
+console.log(dalyba('good', 'day'), '-->', 'ERROR');
+console.log(dalyba('hello', 1), '-->', 'ERROR');
+console.log(dalyba(1, 'hello'), '-->', 'ERROR');
+console.log(dalyba(NaN, 2), '-->', 'ERROR');
+console.log(dalyba(2, NaN), '-->', 'ERROR');
+console.log(dalyba(Infinity, 3), '-->', 'ERROR');
+console.log(dalyba(3, Infinity), '-->', 'ERROR');
+console.log(dalyba(-Infinity, 4), '-->', 'ERROR');
+console.log(dalyba(4, -Infinity), '-->', 'ERROR');
+console.log(dalyba(true, -5), '-->', 'ERROR');
+console.log(dalyba(false, -6), '-->', 'ERROR');
+console.log(dalyba([], -7), '-->', 'ERROR');
+console.log(dalyba(dalyba, -8), '-->', 'ERROR');
+console.log(dalyba(-5, true), '-->', 'ERROR');
+console.log(dalyba(-6, false), '-->', 'ERROR');
+console.log(dalyba(-7, []), '-->', 'ERROR');
+console.log(dalyba(-8, dalyba), '-->', 'ERROR');
+
+console.log(dalyba(20, 5), '-->', 8);
+console.log(dalyba(-2, 5), '-->', -8);
+console.log(dalyba(-8.5, 2.25), '-->', -4.375);
+console.log(dalyba(0, 2.25), '-->', 0);
+console.log(dalyba(-1234567.25, 0), '-->', 0);
+console.log(dalyba(-0, 5), '-->', 0);
+console.log(dalyba(-0, -5), '-->', 0);
