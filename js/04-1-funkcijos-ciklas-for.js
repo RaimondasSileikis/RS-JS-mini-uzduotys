@@ -32,6 +32,17 @@ function sumavimas(nuo, iki) {
 
 // 2, panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo: 
 
+function keitiklis(abc) {
+     let cba = '';
+     for (let i = 0; i < abc.length; i++) {
+         const raide = abc[abc.length - 1 - i]   
+         console.log(raide);
+         cba += raide
+     }
+     return cba
+ }
+ const abc = `abcdefg`;
+ console.log(`${abc} -> ${keitiklis(abc)}`);
 
 // 3. Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
     // a. 0 - 11
