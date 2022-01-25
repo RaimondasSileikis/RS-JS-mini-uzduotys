@@ -46,4 +46,41 @@ console.log(dalyba(-1234567.25, 0), '-->', 0);
 console.log(dalyba(-0, 5), '-->', 0);
 console.log(dalyba(-0, -5), '-->', 0);
 */
+function skirtumas(a, b) {
+    return Math.abs(b - a);
+}
+console.log(skirtumas(0, 5));
+/*
+function keitiklis(a, b) {
+    let pakeistas1 = '';
+    let pakeistas2 = '';
+    let pakeistas3 = '';
+    
+    for (let i = keitiklis(a[0]); i < (keitiklis(a[1]) - keitiklis(a[0])); i++) {
+    if (i % keitiklis(b[0]) === 0) {
+        pakeistas1++
+        return pakeistas1;
+    } 
+    
+    for (let i = keitiklis(a[0]); i < (keitiklis(a[1]) - keitiklis(a[0])); i++) {
+        if (i % keitiklis(b[1]) === 0) {
+            pakeistas1++
+            return pakeistas2;
+        }
+        for (let i = keitiklis(a[0]); i < (keitiklis(a[1]) - keitiklis(a[0])); i++) {
+            if (i % keitiklis(b[2]) === 0) {
+                pakeistas1++
+                return pakeistas3;
+            }
+  }
+  
 
+
+
+
+const a = [0, 11];
+const b = [3, 5, 7];
+
+console.log(keitiklis(a, b));
+console.log(pakeistas1, pakeistas2, pakeistas3);
+*/
